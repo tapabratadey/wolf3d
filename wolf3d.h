@@ -6,7 +6,7 @@
 /*   By: tadey <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 13:38:48 by tadey             #+#    #+#             */
-/*   Updated: 2018/02/15 14:51:50 by tadey            ###   ########.fr       */
+/*   Updated: 2018/02/17 19:14:21 by tadey            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,11 @@ typedef struct	s_game
 	double	camera_x;	
 	char 	*map;
 	char	*s;
-	int	**game_map;
+	int		**game_map;
+	int		fd;
+	int		result;
+	char	*file;
+	char	*store;
 }				t_game;
 
 void	draw_sky(t_game *game);
@@ -100,5 +104,6 @@ int		exit_hook(t_game *game);
 int		read_map(int argc, char **argv, t_game *game);
 void    check_map(t_game *game);
 int		**create_game_map(t_game *game);
-int	redraw(t_game *game);
+int		redraw(t_game *game);
+int		error(char *str);
 #endif
