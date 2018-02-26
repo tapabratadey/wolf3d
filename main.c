@@ -6,7 +6,7 @@
 /*   By: tadey <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/15 13:42:36 by tadey             #+#    #+#             */
-/*   Updated: 2018/02/15 14:16:39 by tadey            ###   ########.fr       */
+/*   Updated: 2018/02/16 22:01:33 by tadey            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int		**create_game_map(t_game *game)
 	int		i;
 	int		j;
 	int		k;
+	int		m;
+	int		n;
 
 	game->s = game->map;
 	new = (int **)ft_memalloc(sizeof(int *) * MAP_HEIGHT);
@@ -35,6 +37,18 @@ int		**create_game_map(t_game *game)
 			++k;
 		}
 		++i;
+	}
+	m = 0;
+	while (m < 24)
+	{
+		n = 0;
+		while (n < 23)
+		{
+			if (new[23][n] != 1 || new[0][n] != 1 || new[m][23] != 1 || new[m][0] != 1)
+				error("You can't change the boundary.");
+			n++;
+		}
+		m++;
 	}
 	return (new);
 }
