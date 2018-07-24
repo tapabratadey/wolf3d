@@ -3,7 +3,7 @@
 Steps to run the Wolf3d-</br>
 
 git clone https://github.com/tapabratadey/wolf3d2.0.git</br>
-run ./wolf3d map</br>
+cd wolf3d2.0 && sh run.sh</br>
 
 Movements:</br>
 Up: W</br>
