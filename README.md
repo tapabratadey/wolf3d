@@ -1,6 +1,7 @@
 # wolf3d2.0
 
 Steps to run the Wolf3d-</br>
+Copy and paste the following two lines in your terminal</br>
 
 git clone https://github.com/tapabratadey/wolf3d2.0.git</br>
 cd wolf3d2.0 && sh run.sh</br>
