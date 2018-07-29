@@ -13,3 +13,4 @@ Up: W</br>
 Down: S</br>
 Right: D</br>
 Left: A</br>
+Esc: To quit the game</br>
