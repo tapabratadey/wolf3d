@@ -7,7 +7,7 @@ An implementation of the famous John Carmack’s and John Romero’s video game 
 Steps to run the Wolf3d-</br>
 Copy and paste the following two lines in your terminal</br>
 
-git clone https://github.com/tapabratadey/wolf3d2.0.git</br>
+git clone https://github.com/tapabratadey/Wolf3d.git</br>
 cd wolf3d2.0 && sh run.sh</br>
 
 Movements:</br>
